@@ -1,0 +1,9 @@
+{
+  "name": "niuniuniu",
+  "version": "0.0.1",
+  "description": "Shield Mandarin 101 bot",
+  "main": "index.ts",
+  "author": "Julius \"Chalk\" Lundang",
+  "license": "MIT",
+  "private": true
+}
