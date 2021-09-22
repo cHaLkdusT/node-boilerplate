@@ -1,7 +1,7 @@
 {
-  "name": "niuniuniu",
+  "name": "node-boilerplate",
   "version": "0.0.1",
-  "description": "Shield Mandarin 101 bot",
+  "description": "NodeJS boilerplate application",
   "main": "index.ts",
   "author": "Julius \"Chalk\" Lundang",
   "license": "MIT",
