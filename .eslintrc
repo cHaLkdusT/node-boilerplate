@@ -1,10 +1,34 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier", "no-loops"],
+  "plugins": ["@typescript-eslint", "prettier", "jest", "no-loops"],
   "extends": ["eslint:recommended", "airbnb-base", "prettier"],
+  "env": {
+    "jest/globals": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
   "rules": {
-    "no-loops/no-loops": 2,
-    "prettier/prettier": 2
+    "no-loops/no-loops": "error",
+    "prettier/prettier": "error",
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error",
+    "import/extensions": [
+      "error", 
+      "ignorePackages", 
+      {
+        "js": "never",
+        "ts": "never" 
+      }
+    ]
   }
 }
